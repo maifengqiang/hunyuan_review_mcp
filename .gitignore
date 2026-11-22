@@ -1,0 +1,24 @@
+# 密钥：绝不能进版本库
+.env
+.env.local
+*.key
+
+# 证据与评审产物
+review-evidence/
+evidence-*/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 构建产物（证据采集会生成）
+/build/
+/build-evidence/
+/build-asan/
+/build-tsan/
+cmake-build-*/
+compile_commands.json
+CMakeCache.txt
